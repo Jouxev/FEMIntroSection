@@ -102,6 +102,7 @@ const ImageDesktop = styled.img`
   })}
 `;
 const ImageMobile = styled.img`
+  display: none;
   width: 100%;
   ${mobile({
     display: "block",
@@ -129,8 +130,8 @@ export const HeroSection = () => {
         </IconsContainer>
       </Right>
       <Left>
-        <ImageDesktop src={ImageHeromobile} alt="hero" />{" "}
-        <ImageMobile src={ImageHeroDesktop} alt="hero" />{" "}
+        <ImageDesktop src={ImageHeroDesktop} alt="hero" />{" "}
+        <ImageMobile src={ImageHeromobile} alt="hero" />{" "}
       </Left>
     </Container>
   );
